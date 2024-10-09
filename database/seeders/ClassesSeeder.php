@@ -31,7 +31,7 @@ class ClassesSeeder extends Seeder
                         Student::factory()
                             ->count(5)
                             ->state(function (array $attributes, Section $section) {
-                                return ['class_id' => $section->class_id];
+                                return ['classes_id' => $section->classes_id];
                             })
                     )
             )

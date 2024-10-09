@@ -10,7 +10,7 @@ class Student extends Model
     use HasFactory;
 
     protected $fillable = [
-        "class_id",
+        "classes_id",
         "section_id",
         "name",
         "email",
@@ -18,7 +18,7 @@ class Student extends Model
 
     public function Classes()
     {
-        return $this->belongsTo(Classes::class, 'class_id');
+        return $this->belongsTo(Classes::class, 'classes_id');
     }
 
     public function Section()

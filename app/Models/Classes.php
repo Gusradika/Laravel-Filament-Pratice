@@ -16,6 +16,6 @@ class Classes extends Model
 
     public function Section()
     {
-        return $this->hasMany(Section::class, 'class_id');
+        return $this->hasMany(Section::class, 'classes_id');
     }
 }
